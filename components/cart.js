@@ -24,7 +24,7 @@ const Cart = () => {
         {cartItems.length >= 1 &&
           cartItems.map((item) => {
             return (
-              <Card>
+              <Card key={item.slug}>
                 <img
                   src={item.image.data.attributes.formats.thumbnail.url}
                   alt={item.title}
